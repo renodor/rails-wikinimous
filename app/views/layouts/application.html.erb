@@ -10,6 +10,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-light mb-5">
+      <a class="navbar-brand">MesPtitsArticles</a>
+      <%= link_to 'Create New', articles_new_path %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  <script src="https://kit.fontawesome.com/ae46c9edb9.js" crossorigin="anonymous"></script>
   </body>
 </html>
